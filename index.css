@@ -1,0 +1,1466 @@
+body {
+  height: 100%;
+}
+body .m_body {
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  margin-top: 35px;
+}
+body .m_body .trip {
+  padding-top: 0;
+  background-color: #fff;
+}
+body .m_body .trip .trip_nav {
+  height: 36px;
+  border-bottom: 2px solid #3983e5;
+  line-height: 36px;
+}
+body .m_body .trip .trip_nav .trip_nav_left a {
+  font-size: 16px;
+  display: block;
+  float: left;
+  margin-right: 30px;
+  color: #333;
+  position: relative;
+}
+body .m_body .trip .trip_nav .trip_nav_left a .n_sanjiao {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -1px;
+  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+  border-bottom: 6px solid #3983e5;
+  border-top: 0 none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(2),
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(8) {
+  position: relative;
+}
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(2) .nav_label,
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(8) .nav_label {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  display: inline-block;
+  padding: 0 2px;
+  height: 15px;
+  line-height: 15px;
+  background-color: #ff9913;
+  color: #fff;
+  vertical-align: 2px;
+  font-weight: normal;
+}
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(2) .nav_label .f_hot,
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(8) .nav_label .f_hot {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: 2px;
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+}
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(2) .nav_label .triangle,
+body .m_body .trip .trip_nav .trip_nav_left a:nth-child(8) .nav_label .triangle {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #da620a transparent transparent #da620a;
+  transform: scale(0.75);
+}
+body .m_body .trip .trip_nav .trip_nav_right {
+  float: right;
+  color: #3983e5;
+  display: block;
+  height: 36px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body .m_body .trip .trip_nav .trip_nav_right .bjgo {
+  float: left;
+  padding-top: 7px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body .m_body .trip .trip_nav .trip_nav_right .sanjiao1 {
+  width: 0;
+  height: 0;
+  display: block;
+  float: left;
+  margin-top: 24px;
+  box-sizing: border-box;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3983e5 transparent transparent transparent;
+}
+body .m_body .trip .trip_nav .trip_nav_right .sanjiao2 {
+  width: 0;
+  height: 0;
+  display: block;
+  float: left;
+  margin-top: 17px;
+  box-sizing: border-box;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #3983e5 transparent;
+}
+body .m_body .trip .trip_content {
+  height: 390px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+}
+body .m_body .trip .trip_content .t_city_list {
+  width: 408px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: #fff;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  z-index: 20;
+}
+body .m_body .trip .trip_content .t_city_list .t_city_list_nav {
+  width: 100%;
+  height: 22px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #ccc;
+}
+body .m_body .trip .trip_content .t_city_list .t_city_list_nav ul {
+  width: 100%;
+}
+body .m_body .trip .trip_content .t_city_list .t_city_list_nav ul li {
+  float: left;
+  padding: 0 8px;
+  cursor: pointer;
+  height: 24px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .t_city_list .t_city_list_nav ul .city_list_btn_active {
+  border-bottom: 2px solid #3983e5;
+  font-weight: bold;
+  color: #3983e5;
+}
+body .m_body .trip .trip_content .t_city_list .city_list_btn_active {
+  border-bottom: 2px solid #3983e5;
+  color: #3983e5;
+}
+body .m_body .trip .trip_content .t_city_list .hot_city li {
+  float: left;
+  width: 55px;
+  height: 24px;
+  margin: 0 0px 2px 0;
+  padding-left: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  color: #333;
+}
+body .m_body .trip .trip_content .t_city_list .ABCDE_city em,
+body .m_body .trip .trip_content .t_city_list .FGHJ_city em,
+body .m_body .trip .trip_content .t_city_list .KLMNP_city em,
+body .m_body .trip .trip_content .t_city_list .QRSTW_city em,
+body .m_body .trip .trip_content .t_city_list .XYZ_city em {
+  display: block;
+  float: left;
+  font-style: normal;
+  width: 30px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #e56700;
+}
+body .m_body .trip .trip_content .t_city_list .ABCDE_city li,
+body .m_body .trip .trip_content .t_city_list .FGHJ_city li,
+body .m_body .trip .trip_content .t_city_list .KLMNP_city li,
+body .m_body .trip .trip_content .t_city_list .QRSTW_city li,
+body .m_body .trip .trip_content .t_city_list .XYZ_city li {
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .t_city_list .ABCDE_city li span,
+body .m_body .trip .trip_content .t_city_list .FGHJ_city li span,
+body .m_body .trip .trip_content .t_city_list .KLMNP_city li span,
+body .m_body .trip .trip_content .t_city_list .QRSTW_city li span,
+body .m_body .trip .trip_content .t_city_list .XYZ_city li span {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 24px;
+  margin: 0 0px 2px 0;
+  padding-left: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  color: #333;
+}
+body .m_body .trip .trip_content .t_city_list .ABCDE_city li .sy,
+body .m_body .trip .trip_content .t_city_list .FGHJ_city li .sy,
+body .m_body .trip .trip_content .t_city_list .KLMNP_city li .sy,
+body .m_body .trip .trip_content .t_city_list .QRSTW_city li .sy,
+body .m_body .trip .trip_content .t_city_list .XYZ_city li .sy {
+  margin-left: 30px;
+}
+body .m_body .trip .trip_content .t_city_list .ABCDE_city li span:hover,
+body .m_body .trip .trip_content .t_city_list .FGHJ_city li span:hover,
+body .m_body .trip .trip_content .t_city_list .KLMNP_city li span:hover,
+body .m_body .trip .trip_content .t_city_list .QRSTW_city li span:hover,
+body .m_body .trip .trip_content .t_city_list .XYZ_city li span:hover {
+  background-color: #3983e5;
+}
+body .m_body .trip .trip_content .remen {
+  padding: 15px 19px 0;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .remen .trip_content_nav {
+  height: 20px;
+  line-height: 20px;
+}
+body .m_body .trip .trip_content .remen .trip_content_nav ul {
+  height: 20px;
+}
+body .m_body .trip .trip_content .remen .trip_content_nav ul li {
+  float: left;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .remen .trip_content_nav ul .active111 {
+  background-color: #3983e5;
+  color: #FFF;
+  border-radius: 6px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: absolute;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left {
+  width: 910px;
+  height: 330px;
+  float: left;
+  margin-right: 10px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public {
+  height: 160px;
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public a img {
+  width: 100%;
+  height: 100%;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_smalltag {
+  width: 88px;
+  height: 20px;
+  background-color: #FF6913;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 10px 0;
+  color: #fff;
+  line-height: 20px;
+  padding: 0 11px 0 3px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 26px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag .circletag_top {
+  width: 102px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag .circletag_bottom {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding-top: 2px;
+  box-sizing: border-box;
+  padding-right: 3px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag .circletag_bottom span:nth-child(1) {
+  color: #fff;
+  vertical-align: 7px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag .circletag_bottom span:nth-child(2) {
+  color: #f60;
+  font-size: 20px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .product_circletag .circletag_bottom span:nth-child(3) {
+  color: #fff;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .t_mouseover {
+  display: none;
+  position: absolute;
+  padding: 26px 10px 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+  line-height: 16px;
+  box-shadow: 0px 0px 2px 2px #f6f6f6 inset;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .t_mouseover .title {
+  text-align: center;
+  font-size: 22px;
+  color: #FFF;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .t_mouseover .info {
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 8px;
+  line-height: 16px;
+  height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #FFF;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .t_mouseover .link {
+  margin-top: 18px;
+  text-align: center;
+  color: #FFF;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .active2 {
+  display: block;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public .active3 {
+  display: none;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_left .trip_product_public:nth-child(4n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .remen .trip_content_product .trip_content_product_right {
+  float: right;
+}
+body .m_body .trip .trip_content .tejialvyou {
+  padding: 15px 19px 0;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul {
+  height: 20px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul li {
+  float: left;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul .t_active1 {
+  background-color: #3983e5;
+  color: #FFF;
+  border-radius: 6px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul li:last-child {
+  float: right;
+  box-sizing: border-box;
+  margin-right: 0;
+  padding: 0;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul li:last-child a {
+  color: #3983e5;
+}
+body .m_body .trip .trip_content .tejialvyou .t_tour_nav ul .more_tour:hover {
+  border: 1px solid #3983e5;
+  border-radius: 3px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left {
+  width: 910px;
+  height: 330px;
+  float: left;
+  margin-right: 10px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item {
+  height: 160px;
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a {
+  display: block;
+  position: relative;
+  height: 110px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a img {
+  width: 100%;
+  transition: all linear 0.2s;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a .tag_top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 3px 0 10px 0.5px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a .tag_top .tag_ziyouxing {
+  background: #4BA3FF;
+  border-radius: 0 0 10px 0;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 11px 0 6px;
+  color: #fff;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a .tag_top .tag_gentuanyou {
+  background: #FF7069;
+  border-radius: 0 0 10px 0;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 11px 0 6px;
+  color: #fff;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a .tag_top .tag_bjgo {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 11px 0 6px;
+  color: #fff;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item a .tag_bottom {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .tag_jieshao {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .t_item-info {
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .t_item-info .t_price {
+  position: relative;
+  float: right;
+  font: 22px tahoma;
+  color: #f60;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .t_item-info .t_price span:first-child {
+  vertical-align: 7px;
+  font: 12px arial;
+  color: #666;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .t_item-info .t_price span:last-child {
+  margin-left: 3px;
+  vertical-align: 2px;
+  font: 12px "Microsoft yahei";
+  color: #666;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item .t_item-info .t_youhui {
+  color: #FF4646;
+  display: block;
+  line-height: 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item:hover {
+  box-shadow: 0px 0px 3px #999;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item:hover img {
+  transform: scale(1.05);
+  transition: all linear 0.2s;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_left .t_item:nth-child(4n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .tejialvyou .t_public .t_tour_right {
+  float: right;
+  width: 220px;
+  height: 330px;
+}
+body .m_body .trip .trip_content .chujingyou {
+  height: 390px;
+  border-top: 0 none;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left {
+  padding: 0 20px;
+  width: 230px;
+  height: 390px;
+  overflow: hidden;
+  border-right: 1px dashed #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_top {
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_top dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+  width: 187px;
+  height: 34px;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_top dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_top dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_bot {
+  margin: 0px 0 7px 0;
+  overflow: hidden;
+  position: relative;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_bot dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_bot dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_left .chu_k_bot dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right {
+  padding: 15px 0;
+  box-sizing: border-box;
+  height: 390px;
+  float: right;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right ul {
+  height: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  margin-left: 9px;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right ul li {
+  float: left;
+  line-height: 20px;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right ul li:last-child .more {
+  float: left;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right ul li:last-child .sanjiao {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3983e5 transparent transparent transparent;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right ul .chu_active {
+  background: #3983e5;
+  color: #fff;
+  border-radius: 5px;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content {
+  width: 929px;
+  height: 340px;
+  margin-left: 9px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item {
+  margin: 0 10px 10px 0;
+  position: relative;
+  width: 220px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_pic {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_pic img {
+  width: 220px;
+  transition: all linear 0.2s;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_name {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_info {
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_info .price {
+  position: relative;
+  float: right;
+  font: 22px/1.5 tahoma;
+  color: #f60;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_info .price .money {
+  vertical-align: 7px;
+  font: 12px/1.5 arial;
+  color: #666;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_info .price .qi {
+  margin-left: 3px;
+  vertical-align: 2px;
+  font: 12px/1.5 "Microsoft yahei";
+  color: #666;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item .item_info .diamond {
+  display: block;
+  width: 47px;
+  height: 8px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px;
+  background: url(../img/zuanshi.png) no-repeat;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item:nth-child(4n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item:hover img {
+  transform: scale(1.05);
+  transition: all linear 0.2s;
+}
+body .m_body .trip .trip_content .chujingyou .chu_tour_right .chu_tour_right_content .chu_tour_item:hover {
+  box-shadow: 0 0 3px #999;
+}
+body .m_body .trip .trip_content .jingneiyou {
+  height: 390px;
+  border-top: 0 none;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left {
+  padding: 0 20px;
+  width: 230px;
+  height: 390px;
+  overflow: hidden;
+  border-right: 1px dashed #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_top {
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_top dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+  width: 187px;
+  height: 34px;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_top dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_top dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_bot {
+  margin: 0px 0 7px 0;
+  overflow: hidden;
+  position: relative;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_bot dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_bot dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_left .nei_k_bot dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right {
+  padding: 15px 0px;
+  box-sizing: border-box;
+  height: 390px;
+  float: right;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right ul {
+  height: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right ul li {
+  float: left;
+  line-height: 20px;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right ul li:last-child .more {
+  float: left;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right ul li:last-child .sanjiao {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3983e5 transparent transparent transparent;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right ul .nei_active {
+  background: #3983e5;
+  color: #fff;
+  border-radius: 5px;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content {
+  width: 929px;
+  height: 340px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item {
+  margin: 0 10px 10px 0;
+  position: relative;
+  width: 220px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_pic {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_pic img {
+  width: 220px;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_name {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_info {
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_info .price {
+  position: relative;
+  float: right;
+  font: 22px/1.5 tahoma;
+  color: #f60;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_info .price .money {
+  vertical-align: 7px;
+  font: 12px/1.5 arial;
+  color: #666;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_info .price .qi {
+  margin-left: 3px;
+  vertical-align: 2px;
+  font: 12px/1.5 "Microsoft yahei";
+  color: #666;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item .item_info .diamond {
+  display: block;
+  width: 47px;
+  height: 8px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px;
+  background: url(../img/zuanshi.png) no-repeat;
+}
+body .m_body .trip .trip_content .jingneiyou .nei_tour_right .nei_tour_right_content .nei_tour_item:nth-child(4n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .zhoubianyou {
+  height: 390px;
+  border-top: 0 none;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left {
+  padding: 0 20px;
+  width: 230px;
+  height: 390px;
+  overflow: hidden;
+  border-right: 1px dashed #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_top {
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_top dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+  width: 187px;
+  height: 34px;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_top dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_top dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_bot {
+  margin: 0px 0 7px 0;
+  overflow: hidden;
+  position: relative;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_bot dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_bot dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_left .zhou_k_bot dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right {
+  padding: 15px 0;
+  height: 390px;
+  float: right;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right ul {
+  height: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right ul li {
+  float: left;
+  line-height: 20px;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right ul li:last-child .more {
+  float: left;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right ul li:last-child .sanjiao {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3983e5 transparent transparent transparent;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right ul .zhou_active {
+  background: #3983e5;
+  color: #fff;
+  border-radius: 5px;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content {
+  width: 929px;
+  height: 340px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item {
+  margin: 0 10px 10px 0;
+  position: relative;
+  width: 220px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_pic {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_pic img {
+  width: 220px;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_name {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_info {
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_info .price {
+  position: relative;
+  float: right;
+  font: 22px/1.5 tahoma;
+  color: #f60;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_info .price .money {
+  vertical-align: 7px;
+  font: 12px/1.5 arial;
+  color: #666;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_info .price .qi {
+  margin-left: 3px;
+  vertical-align: 2px;
+  font: 12px/1.5 "Microsoft yahei";
+  color: #666;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item .item_info .diamond {
+  display: block;
+  width: 47px;
+  height: 8px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px;
+  background: url(../img/zuanshi.png) no-repeat;
+}
+body .m_body .trip .trip_content .zhoubianyou .zhou_tour_right .zhou_tour_right_content .zhou_tour_item:nth-child(4n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .ticket {
+  height: 390px;
+  border-top: 0 none;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left {
+  padding: 0 20px;
+  width: 230px;
+  height: 390px;
+  overflow: hidden;
+  border-right: 1px dashed #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_top {
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_top dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+  width: 187px;
+  height: 34px;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_top dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_top dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_bot {
+  margin: 0px 0 7px 0;
+  overflow: hidden;
+  position: relative;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_bot dt {
+  padding: 4px 0 0 0;
+  font: 700 14px/34px "Microsoft yahei";
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_bot dd {
+  margin-left: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  zoom: 1;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_left .ticket_k_bot dd a {
+  position: relative;
+  float: left;
+  display: block;
+  border-left: 1px solid #ececec;
+  padding: 0 10px;
+  line-height: 18px;
+  height: 18px;
+  margin: 7px 0;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right {
+  padding: 15px 0;
+  height: 390px;
+  float: right;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right ul {
+  height: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right ul li {
+  float: left;
+  line-height: 20px;
+  margin-right: 15px;
+  padding: 0 8px;
+  color: #3983e5;
+  cursor: pointer;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right ul li:last-child .more {
+  float: left;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right ul li:last-child .sanjiao {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: left;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #3983e5 transparent transparent transparent;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right ul .ticket_active {
+  background: #3983e5;
+  color: #fff;
+  border-radius: 5px;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content {
+  width: 929px;
+  height: 340px;
+  box-sizing: border-box;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left {
+  width: 680px;
+  height: 340px;
+  float: left;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item {
+  margin: 0 10px 10px 0;
+  position: relative;
+  width: 220px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_pic {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_pic img {
+  width: 220px;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_name {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_info {
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 0 5px;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_info .price {
+  position: relative;
+  float: right;
+  font: 22px/1.5 tahoma;
+  color: #f60;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_info .price .money {
+  vertical-align: 7px;
+  font: 12px/1.5 arial;
+  color: #666;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_info .price .qi {
+  margin-left: 3px;
+  vertical-align: 2px;
+  font: 12px/1.5 "Microsoft yahei";
+  color: #666;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item .item_info .diamond {
+  display: block;
+  width: 47px;
+  height: 8px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px;
+  background: url(../img/zuanshi.png) no-repeat;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_left .ticket_tour_item:nth-child(3n) {
+  margin-right: 0;
+}
+body .m_body .trip .trip_content .ticket .ticket_tour_right .ticket_tour_right_content .ticket_bj .ticket_tour_item_right {
+  float: left;
+  margin-left: 10px;
+}
+body .travel_serve {
+  margin: 0px auto 200px;
+}
+body .travel_serve .t_serve_nav {
+  height: 36px;
+  border-bottom: 2px solid #3983e5;
+  position: relative;
+}
+body .travel_serve .t_serve_nav span {
+  display: inline-block;
+  height: 36px;
+  font-size: 16px;
+  color: #3983e5;
+  line-height: 36px;
+}
+body .travel_serve .t_serve_nav i {
+  position: absolute;
+  bottom: -1px;
+  left: 26px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+  border-bottom: 6px solid #3983e5;
+  border-top: 0 none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+body .travel_serve .t_serve_content {
+  margin-top: 10px;
+}
+body .travel_serve .t_serve_content .supply_box {
+  width: 384px;
+  height: 145px;
+  margin-left: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  float: left;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd {
+  height: 102px;
+  overflow: hidden;
+  cursor: pointer;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img {
+  width: 110px;
+  float: left;
+  text-align: right;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_wifi {
+  background: #abcbf5;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_wifi .img_wifi_i {
+  height: 34px;
+  margin: -17px 0 0 -23px;
+  background-position: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  display: inline-block;
+  background: url(../img/un_index_supply.png) 0 0 no-repeat;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_visa {
+  background-color: #cbe2b3;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_visa .img_visa_i {
+  height: 46px;
+  margin: -23px 0 0 -23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  display: inline-block;
+  background: url(../img/un_index_supply.png) no-repeat;
+  background-position: 0 -39px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_insurance {
+  background: #f6dbb9;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_img .img_insurance i {
+  height: 48px;
+  margin: -24px 0 0 -23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  display: inline-block;
+  background: url(../img/un_index_supply.png) no-repeat;
+  background-position: 0 -89px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_cont {
+  margin-left: 130px;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_cont .supply_title {
+  font: 16px/1.5 "Microsoft yahei";
+  margin-bottom: 5px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd .supply_cont .supply_intro {
+  padding-right: 5px;
+  color: #666;
+}
+body .travel_serve .t_serve_content .supply_box .supply_hd:hover {
+  background-color: #E2EEFF;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd {
+  height: 40px;
+  overflow: hidden;
+  border-top: 1px solid #e0e0e0;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list {
+  margin-left: -1px;
+  overflow: hidden;
+  width: 385px;
+  height: 40px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list li {
+  float: left;
+  vertical-align: middle;
+  padding: 8px 0;
+  box-sizing: border-box;
+  width: 96px;
+  height: 40px;
+  text-align: center;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list li .supply_item {
+  width: 96px;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  border-left: 1px dashed #a3a3a3;
+  text-align: center;
+  margin-left: -1px;
+  color: #333;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list li .supply_item .icon_place {
+  overflow: hidden;
+  margin-right: 5px;
+  line-height: 24px;
+  text-align: center;
+  color: #333;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list li .supply_item .icon_place img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list li:hover {
+  background-color: #E2EEFF;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list .teshuli {
+  width: 127px;
+}
+body .travel_serve .t_serve_content .supply_box .supply_bd .supply_list .teshuli .teshua {
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 120px;
+}
+body .travel_serve .t_serve_content .supply_box:first-child {
+  margin-left: 0;
+}
